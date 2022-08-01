@@ -3,6 +3,7 @@ import './App.css';
 import {Footer} from './Components/Footer';
 import {Landing} from './Components/Landing';
 import {Navigation} from './Components/Navigation'
+import {FirstDiv} from './Components/FirstDiv'
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Navigation/>
       <Landing/>
     </div>
+    <FirstDiv/>
     <div>
       <Footer/>
     </div>
