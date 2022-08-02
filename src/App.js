@@ -1,34 +1,30 @@
 import logo from './logo.svg';
 import './App.css';
-import {Footer} from './Components/Footer';
-import {Landing} from './Components/Landing';
-import {Navigation} from './Components/Navigation'
-import {FirstDiv} from './Components/FirstDiv'
-import {SecondDiv} from './Components/SecondDiv'
-import {ThirdDiv} from './Components/ThirdDiv'
-import {ApplicationCards} from './Components/ApplicationCards'
-import {TitleCard} from './Components/TitleCard'
-import {BannerImg} from './Components/BannerImg'
-import {GetStarted} from './Components/GetStarted'
+import React from "react";
+import 
+{
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link
+} 
+  from "react-router-dom";
+import { Homepage } from './Pages/Homepage';
+import { Login } from './Pages/Login';
+import { UserDetails } from './Pages/UserDetails';
+import { Error } from './Pages/Error';
+
 
 function App() {
   return (
-   <div>
-     <div>
-      <Navigation/>
-      <Landing/>
-    </div>
-    <FirstDiv/>
-    <SecondDiv/>
-    <ThirdDiv/>
-    <ApplicationCards/>
-    <TitleCard/>
-    <BannerImg/>
-    <GetStarted/>
-    <div>
-      <Footer/>
-    </div>
-   </div>
+   <Router>
+    <Routes>
+      <Route path="/" element={<Homepage/>} />
+      <Route path="/Login" element={<Login/>} />
+      <Route path="/User_Details" element={<UserDetails/>} />
+      <Route path="*" element={<Error/>} />
+    </Routes>
+   </Router>
   );
 }
 
