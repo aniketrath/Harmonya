@@ -7,6 +7,9 @@ import {FirstDiv} from './Components/FirstDiv'
 import {SecondDiv} from './Components/SecondDiv'
 import {ThirdDiv} from './Components/ThirdDiv'
 import {ApplicationCards} from './Components/ApplicationCards'
+import {TitleCard} from './Components/TitleCard'
+import {BannerImg} from './Components/BannerImg'
+import {GetStarted} from './Components/GetStarted'
 
 function App() {
   return (
@@ -19,6 +22,9 @@ function App() {
     <SecondDiv/>
     <ThirdDiv/>
     <ApplicationCards/>
+    <TitleCard/>
+    <BannerImg/>
+    <GetStarted/>
     <div>
       <Footer/>
     </div>

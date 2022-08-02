@@ -19,8 +19,8 @@ export const Navigation = () => {
         <div className="text-neutral-500 hover:text-zinc-300">
             <p className="text-xl px-10 mx-4 py-6 hover:cursor-default">Career</p>
         </div>
-        <div className="text-xl px-10 mx-4 py-3">
-            <button className="rounded-lg bg-white w-40 pb-1 h-14 font-bold hover:bg-zinc-600 hover:text-slate-100">Get a Demo</button>
+        <div className="text-xl px-10 mx-4 py-4">
+            <button className="rounded-lg bg-white w-36 pb-1 h-12 font-bold hover:bg-zinc-600 hover:text-slate-100">Get a Demo</button>
         </div>
 
     </div>

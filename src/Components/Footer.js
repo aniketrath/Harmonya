@@ -2,13 +2,13 @@ import React from 'react'
 
 export const Footer = () => {
   return (
-    <div className=" inset-x-0 bottom-0 z-10">
+    <div className=" inset-x-0 bottom-0 z-0">
         <div>
 
             <div className="bg-gradient-to-r from-amber-500 to-lime-500 h-4">
 
             </div>
-            <div className="bg-neutral-900 h-96 ">
+            <div className="bg-neutral-900 h-64 ">
 
             </div>
         </div>
