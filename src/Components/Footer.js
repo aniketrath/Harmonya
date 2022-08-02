@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Footer = () => {
   return (
-    <div className=" inset-x-0 bottom-0 ">
+    <div className=" inset-x-0 bottom-0 z-10">
         <div>
 
             <div className="bg-gradient-to-r from-amber-500 to-lime-500 h-4">
