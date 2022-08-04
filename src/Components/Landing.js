@@ -6,7 +6,7 @@ export const Landing = () => {
             <div className="min-h-[94%] bg-neutral-900">
 
                 <div className="pl-[12%] pt-[16%]">
-                    <p className="text-stone-300 w-1/3 text-[5.5rem]">
+                    <p className="text-stone-300 w-1/3 text-[5.5rem] font-[400] ">
                         Supercharge your product data
                     </p>
                     <p className="text-2xl text-stone-500 w-1/4 pt-4">Harmonya helps brands and retailers move at the speed of commerce</p>
