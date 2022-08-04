@@ -1,12 +1,13 @@
 import React from 'react'
+import NotFound from '../Icons/NotFound.svg'
 
 export const Error = () => {
   return (
     <div class="bg-zinc-300 flex h-screen place-content-center">
         <div>
 
-            <img class=" ml-[23%] mt-[20%] "
-            src="..//Icons/Error.svg" 
+            <img class=" ml-[23%] mt-[15%] "
+            src={NotFound} 
             alt="oops" 
             width="55%"/>
 
