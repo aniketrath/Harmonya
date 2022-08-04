@@ -6,7 +6,7 @@ export const Error = () => {
         <div>
 
             <img class=" ml-[23%] mt-[20%] "
-            src="../Icons/Error.svg" 
+            src="..//Icons/Error.svg" 
             alt="oops" 
             width="55%"/>
 
