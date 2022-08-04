@@ -1,7 +1,6 @@
 import React from 'react'
-import {Footer} from '../Components/Footer';
+import {FooterMain} from '../Components/Footer_Main';
 import {Landing} from '../Components/Landing';
-import {Navigation} from '../Components/Navigation'
 import {FirstDiv} from '../Components/FirstDiv'
 import {SecondDiv} from '../Components/SecondDiv'
 import {ThirdDiv} from '../Components/ThirdDiv'
@@ -13,10 +12,7 @@ import {GetStarted} from '../Components/GetStarted'
 export const Homepage = () => {
   return (
     <div>
-
-        <Navigation/>
         <Landing/>
-    
         <FirstDiv/>
         <SecondDiv/>
         <ThirdDiv/>
@@ -26,8 +22,7 @@ export const Homepage = () => {
         <BannerImg/>
 
         <GetStarted/>
-        <Footer/>
-    
+        <FooterMain/>
    </div>
   )
 }

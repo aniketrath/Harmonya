@@ -1,23 +1,25 @@
 import React from 'react'
 import NotFound from '../Icons/NotFound.svg'
 import {useNavigate} from "react-router-dom"
+import { FooterMini } from '../Components/Footer_Mini'
 
 export const Error = () => {
 
   let navigate = useNavigate();
 
   return (
-    <div class="bg-zinc-300 flex h-screen place-content-center">
+    <div>
+    <div class="bg-zinc-300 flex h-[83vh] place-content-center">
         <div>
 
-            <img class=" ml-[23%] mt-[15%] "
+            <img class=" ml-[30%] mt-[15%] "
             src={NotFound} 
             alt="oops" 
-            width="55%"/>
+            width="35%"/>
 
-            <p class="text-[2rem] ml-[21%] mt-10 text-center w-[60%] font-medium">
+            <p class="text-[1.475rem] ml-[24%] mt-10 text-center w-[50%] font-medium">
                  Error '404' Page Not found .<br />
-                Seems like you're lost. No worries ,  let's take you back to 
+                Seems like we're not done yet. No worries ,  let's take you back to 
                 the home page. 
             </p>
 
@@ -26,9 +28,11 @@ export const Error = () => {
             class="rounded-lg text-slate-100 bg-neutral-900 
             w-[12vh] pb-1 h-[4.2vh] text-[1.4rem]
             font-semibold 
-            ml-[43%] mt-[4%]">Home</button> 
-
+            ml-[44%] mt-[4%]">Home</button> 
         </div>
+    </div>
+    <FooterMini/>
+
     </div>
   )
 }
