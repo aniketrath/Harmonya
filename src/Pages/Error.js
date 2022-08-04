@@ -1,7 +1,11 @@
 import React from 'react'
 import NotFound from '../Icons/NotFound.svg'
+import {useNavigate} from "react-router-dom"
 
 export const Error = () => {
+
+  let navigate = useNavigate();
+
   return (
     <div class="bg-zinc-300 flex h-screen place-content-center">
         <div>
@@ -17,7 +21,9 @@ export const Error = () => {
                 the home page. 
             </p>
 
-            <button class="rounded-lg text-slate-100 bg-neutral-900 
+            <button 
+            onClick={() => {navigate("/")}} 
+            class="rounded-lg text-slate-100 bg-neutral-900 
             w-[12vh] pb-1 h-[4.2vh] text-[1.4rem]
             font-semibold 
             ml-[43%] mt-[4%]">Home</button> 
