@@ -1,4 +1,5 @@
 import React from 'react'
+import CompanyLogo from '../Icons/CompanyLogo.svg'
 
 export const FooterMain = () => {
   return (
@@ -18,8 +19,16 @@ export const FooterMain = () => {
 
                 <div className="w-2/5 py-4 min-h-full ">
 
-                    <p className="px-[15vh]  text-[3rem]">Harmonya</p>
-                    <p className="px-[11vh] text-[1rem]">
+                <div className="flex">
+                    <img
+                        className="ml-[10vh] mr-[1vh]"
+                        src={CompanyLogo} 
+                        alt="oops" 
+                        width="65vh"/>
+                        <p className=" pt-[1vh] text-[3rem]">
+                        Harmonya</p>
+                    </div>
+                    <p className="px-[11vh] text-[1.5rem]">
                         Supercharge Your
                         <br/>
                         Product data.

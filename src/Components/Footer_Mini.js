@@ -1,14 +1,23 @@
 import React from 'react'
+import CompanyLogo from '../Icons/CompanyLogo.svg'
 
 export const FooterMini = () => {
     return (
         <div className=" inset-x-0 bottom-0 z-0">
             <div className="bg-gradient-to-r from-amber-500 to-lime-500 h-4"></div>
-            <div className="flex h-[24vh] text-stone-300 bg-neutral-900 ">
+            <div className="flex h-[22vh] text-stone-300 bg-neutral-900 ">
 
-                <div className="w-2/5 py-4 min-h-full ">
-
-                    <p className="px-[15vh] pt-[3vh] text-[3rem]">Harmonya</p>
+                <div className="w-2/5 py-8 min-h-full ">
+                    <div className="flex">
+                    <img
+                        className="ml-[10vh] mr-[1vh]"
+                        src={CompanyLogo} 
+                        alt="oops" 
+                        width="65vh"/>
+                        <p className=" pt-[1vh] text-[3rem]">
+                        Harmonya</p>
+                    </div>
+                    
                     <p className="px-[11vh] text-[1.2rem]">
                         Supercharge Your
                         <br/>

@@ -10,9 +10,9 @@ import
 } 
   from "react-router-dom";
 import { Homepage } from './Pages/Homepage';
-//import { Login } from './Pages/Login';
 import { UserDetails } from './Pages/UserDetails';
 import { Error } from './Pages/Error';
+import { Login } from './Pages/Login'
 
 
 function App() {
@@ -23,6 +23,7 @@ function App() {
       <Route path="/" element={<Homepage/>} />
       <Route path="/User_Details" element={<UserDetails/>} />
       <Route path="*" element={<Error/>} />
+      <Route path="/Login" element={<Login/>} />
     </Routes>
    </Router>
   );

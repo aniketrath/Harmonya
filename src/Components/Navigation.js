@@ -1,4 +1,5 @@
 import React from 'react'
+import CompanyLogo from '../Icons/CompanyLogo.svg'
 import 
 {
   Link,useNavigate,
@@ -12,7 +13,15 @@ export const Navigation = () => {
     <div className="flex absolute h-[6vh] inset-x-0 top-0  bg-neutral-900">
 
         <div className="w-3/5 ml-8 my-2 min-h-full text-neutral-100 ">
-            <p className="text-3xl"> Harmonya</p>
+        <div className="flex">
+                    <img
+                        className="ml-[5vh] mr-[1vh]"
+                        src={CompanyLogo} 
+                        alt="oops" 
+                        width="35vh"/>
+                        <p className=" text-[2rem]">
+                        Harmonya</p>
+                    </div>
         </div>
 
         <Link to="/">
