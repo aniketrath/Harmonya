@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/React-Pratice1/static/css/main.f149c935.css",
-    "main.js": "/React-Pratice1/static/js/main.5cd98554.js",
-    "static/js/232.9b9818c5.chunk.js": "/React-Pratice1/static/js/232.9b9818c5.chunk.js",
-    "static/media/Background.jpg": "/React-Pratice1/static/media/Background.af3be95c3732e51552c1.jpg",
-    "static/media/Background_2.jpg": "/React-Pratice1/static/media/Background_2.4bfa853276afb3db6a57.jpg",
-    "static/media/NotFound.svg": "/React-Pratice1/static/media/NotFound.b7c99d3c300a8365e48b238f0bcd6136.svg",
-    "static/media/logo.svg": "/React-Pratice1/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "static/media/Data.svg": "/React-Pratice1/static/media/Data.2a3af1e71bf580b2129baa44dee9ce5d.svg",
-    "static/media/CompanyLogo.svg": "/React-Pratice1/static/media/CompanyLogo.7d85254a14b869b97ee2628397d911c0.svg",
-    "static/media/Twitter.svg": "/React-Pratice1/static/media/Twitter.cb62f7bd8a10e9798e0be73fc7cf8b5c.svg",
-    "index.html": "/React-Pratice1/index.html",
-    "static/media/LinkedIn.svg": "/React-Pratice1/static/media/LinkedIn.37a7a3274a16ce7386a4989327a5e194.svg",
-    "static/media/Applications.svg": "/React-Pratice1/static/media/Applications.aaf6161005d1c48210febed920b4f16d.svg",
-    "static/media/Facebook.svg": "/React-Pratice1/static/media/Facebook.0eb7af7d257dc7b090a5f65d8de80a2a.svg",
-    "main.f149c935.css.map": "/React-Pratice1/static/css/main.f149c935.css.map",
-    "main.5cd98554.js.map": "/React-Pratice1/static/js/main.5cd98554.js.map",
-    "232.9b9818c5.chunk.js.map": "/React-Pratice1/static/js/232.9b9818c5.chunk.js.map"
+    "main.css": "/static/css/main.c1da54f6.css",
+    "main.js": "/static/js/main.48d6c565.js",
+    "static/js/232.9b9818c5.chunk.js": "/static/js/232.9b9818c5.chunk.js",
+    "static/media/Background.jpg": "/static/media/Background.af3be95c3732e51552c1.jpg",
+    "static/media/Background_2.jpg": "/static/media/Background_2.4bfa853276afb3db6a57.jpg",
+    "static/media/NotFound.svg": "/static/media/NotFound.b7c99d3c300a8365e48b238f0bcd6136.svg",
+    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/Data.svg": "/static/media/Data.2a3af1e71bf580b2129baa44dee9ce5d.svg",
+    "static/media/CompanyLogo.svg": "/static/media/CompanyLogo.7d85254a14b869b97ee2628397d911c0.svg",
+    "static/media/Twitter.svg": "/static/media/Twitter.cb62f7bd8a10e9798e0be73fc7cf8b5c.svg",
+    "index.html": "/index.html",
+    "static/media/LinkedIn.svg": "/static/media/LinkedIn.37a7a3274a16ce7386a4989327a5e194.svg",
+    "static/media/Applications.svg": "/static/media/Applications.aaf6161005d1c48210febed920b4f16d.svg",
+    "static/media/Facebook.svg": "/static/media/Facebook.0eb7af7d257dc7b090a5f65d8de80a2a.svg",
+    "main.c1da54f6.css.map": "/static/css/main.c1da54f6.css.map",
+    "main.48d6c565.js.map": "/static/js/main.48d6c565.js.map",
+    "232.9b9818c5.chunk.js.map": "/static/js/232.9b9818c5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f149c935.css",
-    "static/js/main.5cd98554.js"
+    "static/css/main.c1da54f6.css",
+    "static/js/main.48d6c565.js"
   ]
 }
