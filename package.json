@@ -1,7 +1,6 @@
 {
   "name": "content-website",
   "version": "0.1.0",
-  "private": true,
   "homepage":"https://aniket-rath.github.io/Harmonya/",
   "dependencies": {
     "@splinetool/react-spline": "^2.2.1",
