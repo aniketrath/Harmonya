@@ -12,7 +12,7 @@ export const GetStarted = () => {
     
     let navigate = useNavigate();
     return (
-        <div class="flex absolute w-[60%] h-[27%] drop-shadow-xl mt-[-7%] ml-[37vh] z-10 bg-slate-50 "
+        <div class="flex absolute w-[60%] h-[32%] drop-shadow-xl mt-[-7%] ml-[37vh] z-10 bg-slate-50 "
         data-aos="fade-left" data-aos-duration="1000">
             <div class="w-[50%] h-full ml-[10%] mt-[5%] ">
                 <p class="text-[4rem] font-bold"> Let's get started</p>
