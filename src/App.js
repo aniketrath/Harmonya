@@ -13,6 +13,7 @@ import { Homepage } from './Pages/Homepage';
 import { UserDetails } from './Pages/UserDetails';
 import { Error } from './Pages/Error';
 import { Login } from './Pages/Login'
+import {CompanySignUp} from './Pages/CompanySignUp'
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
       <Route path="/User_Details" element={<UserDetails/>} />
       <Route path="*" element={<Error/>} />
       <Route path="/Login" element={<Login/>} />
+      <Route path="/SignUp" element={<CompanySignUp/>} />
     </Routes>
    </Router>
   );

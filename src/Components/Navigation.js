@@ -10,7 +10,7 @@ export const Navigation = () => {
 
     let navigate = useNavigate();
   return (
-    <div className="flex absolute h-[6vh] inset-x-0 top-0  bg-neutral-900">
+    <div className="flex h-[6vh] inset-x-0 top-0  bg-neutral-900">
 
         <div className="w-3/5 ml-8 my-2 min-h-full text-neutral-100 ">
         <div className="flex">
@@ -42,7 +42,7 @@ export const Navigation = () => {
         </Link>
 
         <div className="text-l px-10 mx-4 py-3">
-            <button onClick={() => {navigate("/")}} 
+            <button onClick={() => {navigate("/SignUp")}} 
             className="rounded-lg bg-white w-[12vh] pb-1 h-9 font-bold hover:bg-zinc-600 hover:text-slate-100">Get a Demo</button>
         </div>
     </div>
