@@ -5,21 +5,24 @@ import
   Link,useNavigate,
 } 
   from "react-router-dom";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 
 export const Navigation = () => {
 
     let navigate = useNavigate();
   return (
-    <div className="flex h-[6vh] inset-x-0 top-0  bg-neutral-900">
+    <div className="flex h-[6vh] inset-x-0 top-0  bg-neutral-900" data-aos="fade-in" data-aos-duration="1200">
 
         <div className="w-3/5 ml-8 my-2 min-h-full text-neutral-100 ">
-        <div className="flex">
+        <div className="flex mb-2">
                     <img
                         className="ml-[5vh] mr-[1vh]"
                         src={CompanyLogo} 
                         alt="oops" 
                         width="35vh"/>
-                        <p className=" text-[2rem]">
+                        <p className="ml-2 text-[2rem]">
                         Harmonya</p>
                     </div>
         </div>

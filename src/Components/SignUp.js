@@ -3,10 +3,8 @@ import React from 'react'
 export const SignUp = () => {
     return (
         <div class="absolute transition-all duration-100 ease-in-out
-    bg-gradient-to-r 
-    from-slate-900 
-    to-stone-800
     min-h-screen
+    opacity-75
     w-full ">
             <div class=" min-h-[85vh]
         flex
@@ -30,7 +28,7 @@ export const SignUp = () => {
                     w-[35vh]
                     h-[3.7vh]
                     text-[1.3rem]
-                    text-zinc-400
+                    text-zinc-800
                     font-[500]
                     pb-1
                     pl-4
@@ -72,7 +70,7 @@ export const SignUp = () => {
                             <input
                                 type="text"
                                 id="FirstName"
-                                placeholder="First Name"
+                                value="First Name"
                                 class="w-[40%] 
                         focus:outline-slate-400
                         text-[1.3rem]
@@ -84,7 +82,7 @@ export const SignUp = () => {
                         outline outline-slate-400" />
                             <input type="text"
                                 id="LastName"
-                                placeholder="Last Name"
+                                value="Last Name"
                                 class="w-[40%] ml-[2vh]
                         focus:outline-slate-400
                         text-[1.3rem]
@@ -98,7 +96,7 @@ export const SignUp = () => {
                         <input
                             type="text"
                             id="Position"
-                            placeholder="Position"
+                            value="Position"
                             class="w-[85%]
                     text-[1.3rem]
                     font-[600]
@@ -113,7 +111,7 @@ export const SignUp = () => {
                         <input
                             type="text"
                             id="Position"
-                            placeholder="Company Name"
+                            value="Company Name"
                             class="w-[85%]
                     mt-[4vh]
                     text-[1.3rem]
@@ -128,7 +126,7 @@ export const SignUp = () => {
                         <div class="flex mt-[4vh]">
                             <input type="text"
                                 id="LastName"
-                                placeholder="Bussiness Arena"
+                                value="Bussiness Arena"
                                 class="w-[44%] 
                         text-[1.3rem]
                         font-[600]
@@ -149,12 +147,14 @@ export const SignUp = () => {
                         pb-1
                         pl-2
                         rounded-md
+                        text-zinc-800
                         bg-slate-200
                         focus:outline-slate-400
                         outline outline-3 outline-slate-400">
                                 <option value="1"
                                     class="text-[1.2rem]
-                            font-[500] ">
+                            font-[500]
+                             ">
                                     Employees
                                 </option>
                                 <option value="2"
@@ -188,7 +188,7 @@ export const SignUp = () => {
                                 <input
                                     type="text"
                                     id="Street"
-                                    placeholder="Street + Nr"
+                                    value="Street + Nr"
                                     class="w-[85%]
                         text-[1.3rem]
                         font-[600]
@@ -202,8 +202,9 @@ export const SignUp = () => {
                                 <input
                                     type="text"
                                     id="Extra"
-                                    placeholder="Additional information"
+                                    value="Additional information"
                                     class="w-[85%]
+                                    text-zinc-900
                         mt-[4vh]
                         text-[1.3rem]
                         font-[600]
@@ -217,7 +218,7 @@ export const SignUp = () => {
                                 <input
                                     type="text"
                                     id="Country"
-                                    placeholder="Country"
+                                    value="Country"
                                     class="w-[85%]
                         mt-[4vh]
                         text-[1.3rem]
@@ -233,7 +234,7 @@ export const SignUp = () => {
                                     <input
                                         type="text"
                                         id="Zipcode"
-                                        placeholder="Zip Code"
+                                        value="Zip Code"
                                         class="w-[40%]
                             text-[1.3rem]
                             font-[500]
@@ -245,7 +246,7 @@ export const SignUp = () => {
                             outline outline-3 outline-slate-400" />
                                     <input type="text"
                                         id="Place"
-                                        placeholder="Place"
+                                        value="Place"
                                         class="w-[40%] ml-[2vh]
                             text-[1.4rem]
                             font-[500]
@@ -259,7 +260,7 @@ export const SignUp = () => {
                                 <input
                                     type="text"
                                     id="Email"
-                                    placeholder="Company Email"
+                                    value="Company Email"
                                     class="w-[85%]
                         mt-[4vh]
                         text-[1.3rem]
@@ -275,7 +276,7 @@ export const SignUp = () => {
                                     <input
                                         type="text"
                                         id="PinCode"
-                                        placeholder="Code +"
+                                        value="Code +"
                                         class="w-[40%]
                             text-[1.3rem]
                             font-[500]
@@ -287,7 +288,7 @@ export const SignUp = () => {
                             outline outline-3 outline-slate-400" />
                                     <input type="text"
                                         id="Contact Number"
-                                        placeholder="Phone No."
+                                        value="Phone No."
                                         class="w-[40%] ml-[2vh]
                             text-[1.4rem]
                             font-[500]

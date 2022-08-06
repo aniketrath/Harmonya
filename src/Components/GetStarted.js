@@ -1,9 +1,16 @@
 import React from 'react'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import 
+{
+  useNavigate,
+} 
+  from "react-router-dom";
 AOS.init();
 
 export const GetStarted = () => {
+    
+    let navigate = useNavigate();
     return (
         <div class="flex absolute w-[60%] h-[27%] drop-shadow-xl mt-[-7%] ml-[37vh] z-10 bg-slate-50 "
         data-aos="fade-left" data-aos-duration="1000">
@@ -13,7 +20,8 @@ export const GetStarted = () => {
             </div>
             <div class="mt-[8%] ml-[17%] h-full">
                 <div>
-                    <button class="rounded-lg bg-neutral-900 w-40 pb-1 h-14 font-bold text-slate-100">Learn More</button>
+                    <button onClick={() => {navigate("/SignUp")}}
+                     class="rounded-lg bg-neutral-900 w-40 pb-1 h-14 font-bold text-slate-100">Learn More</button>
                 </div>
             </div>
 

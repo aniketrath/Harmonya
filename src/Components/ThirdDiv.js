@@ -1,9 +1,15 @@
 import React from 'react'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import 
+{
+  Link,useNavigate,
+} 
+from "react-router-dom";
 AOS.init();
 
 export const ThirdDiv = () => {
+    let navigate = useNavigate();
   return (
     <div class="flex mt-[10%] mb-[10%] ">
         <div class="h-3/4 ml-[20%]">
@@ -18,7 +24,8 @@ export const ThirdDiv = () => {
 
             </div>
             <div class="mt-[8%]" data-aos="fade-left" data-aos-duration="600">
-                <button class="rounded-lg bg-neutral-900 w-32 pb-1 h-12 font-bold text-slate-100">Learn More</button> 
+                <button onClick={() => {navigate("/About")}}
+                class="rounded-lg bg-neutral-900 w-32 pb-1 h-12 font-bold text-slate-100">Learn More</button> 
             </div>
 
         </div>

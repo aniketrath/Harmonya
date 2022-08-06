@@ -1,9 +1,16 @@
 import React from 'react'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import 
+{
+  useNavigate,
+} 
+  from "react-router-dom";
 AOS.init();
 
 export const TitleCard = () => {
+    
+    let navigate = useNavigate();
   return (
     <div>
         <div class="bg-gradient-to-r from-lime-500 to-cyan-500 h-3"></div>
@@ -17,7 +24,8 @@ export const TitleCard = () => {
                     that drive through the commerce.
                 </p>
                 <div class="text-xl ml-[12%] px-10 mx-4 py-3 mt-10" data-aos="fade-down" data-aos-duration="1100">
-                    <button class="rounded-lg bg-white w-40 pb-1 h-14 font-bold hover:bg-zinc-600 hover:text-slate-100">About Us</button>
+                    <button onClick={() => {navigate("/About")}}
+                     class="rounded-lg bg-white w-40 pb-1 h-14 font-bold hover:bg-zinc-600 hover:text-slate-100">About Us</button>
                 </div>
 
             </div>

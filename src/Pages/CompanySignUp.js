@@ -1,17 +1,19 @@
 import React from 'react'
 import {SignUp} from '../Components/SignUp'
 import {FooterMini} from '../Components/Footer_Mini'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import Background from '../Images/Background.jpg'
+import '../index.css';
+AOS.init();
 
 export const CompanySignUp = () => {
   return (
     <div>
-    <div class=" transition-all duration-100 ease-in-out
-    bg-gradient-to-r 
-    from-neutral-900 
-    to-neutral-700
+    <div class=" background_form
     min-h-screen
     w-full ">
-      <SignUp/>
+      <div data-aos="fade-in" data-aos-duration="1200"><SignUp/></div>
     </div>
     <FooterMini/>
     </div>
