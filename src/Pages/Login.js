@@ -7,15 +7,20 @@ import {FooterMini} from '../Components/Footer_Mini'
 
 export const Login = () => {
 
-  const [id, setId] = useState("")
-  const [password, setPassword] = useState("")
+  const [username , setUsername] = useState("");
+  const [password, setPassword] = useState("");
 
-  const handleChange = (e) => {
-    let name = e.target.name;
-    let value = e.target.value;
-
+  const handleUser = event => 
+  {
+    const result = event.target.value.replace(/[^a-z]/gi,"");
+    setUsername(result);
   }
 
+  const handlePassCode = event => 
+  {
+    const result = event.target.value.replace(/[^0-9]/gi,"");
+    setPassword(result);
+  }
 
   return (
     <div>
@@ -25,7 +30,9 @@ export const Login = () => {
         <Spline scene="https://prod.spline.design/VXnJirBt-mA-Clha/scene.splinecode" />
 
       </div>
-      <div class="w-1/2 h-full">
+
+      <div 
+      class="w-1/2 h-full">
 
         <div class="mt-[15vh] mb-[5vh] ml-[5vh]">
           <h1 class="text-[5rem] text-slate-300"> Lets Get you In ! </h1>
@@ -131,7 +138,9 @@ export const Login = () => {
                   border-gray-600 
                   rounded  
                   focus:text-gray-600"
-                id="UserName"
+                id="userName"
+                value={username}
+                onChange={handleUser}
                 placeholder="Enter Your Username"/>
           </div>
 
@@ -148,8 +157,11 @@ export const Login = () => {
                   border-gray-600 
                   rounded  
                   focus:text-gray-600"
-                id="UserName"
-                placeholder="Enter Your Password"/>
+                id="password"
+                pattern="[0-9]*"
+                value={password}
+                onChange={handlePassCode}
+                placeholder="Enter Your Passcode"/>
           </div>
         </div>
 
@@ -189,7 +201,7 @@ export const Login = () => {
           </div>
         <div class="ml-[10vh]">
           <button
-            type="button"
+            type="submit"
             class="inline-block 
               px-7 
               py-3 

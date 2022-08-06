@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import React from "react";
+import React , {useState} from "react";
 import {Navigation} from './Components/Navigation'
 import 
 {
@@ -16,7 +16,16 @@ import { Login } from './Pages/Login'
 import {CompanySignUp} from './Pages/CompanySignUp'
 
 
-function App() {
+function App() 
+{
+
+  const adminUser = {
+
+    username:"admin",
+    password:"Admin123",
+
+  }
+
   return (
    <Router>
     <Navigation/>
