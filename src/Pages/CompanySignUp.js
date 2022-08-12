@@ -11,7 +11,6 @@ export const CompanySignUp = () => {
   return (
     <div>
     <div class=" background_form
-    min-h-screen
     w-full ">
       <div data-aos="fade-in" data-aos-duration="1200"><SignUp/></div>
     </div>

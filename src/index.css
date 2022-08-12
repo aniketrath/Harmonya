@@ -4,5 +4,7 @@
 
 .background_form
 {
-    background-image: url("./Images/Background_2.jpg");
+    background-image: url("./Images/Background-left.gif");
+    background-repeat: no-repeat;
+    height: 20%;
 }
