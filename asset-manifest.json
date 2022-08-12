@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/Harmonya/static/css/main.9e4c67c0.css",
-    "main.js": "/Harmonya/static/js/main.b28678ce.js",
+    "main.css": "/Harmonya/static/css/main.82561825.css",
+    "main.js": "/Harmonya/static/js/main.f29ae027.js",
     "static/js/232.9b9818c5.chunk.js": "/Harmonya/static/js/232.9b9818c5.chunk.js",
+    "static/media/Background-left.gif": "/Harmonya/static/media/Background-left.3e3b44e0665f20518228.gif",
     "static/media/Background.jpg": "/Harmonya/static/media/Background.af3be95c3732e51552c1.jpg",
-    "static/media/Background_2.jpg": "/Harmonya/static/media/Background_2.4bfa853276afb3db6a57.jpg",
     "static/media/NotFound.svg": "/Harmonya/static/media/NotFound.b7c99d3c300a8365e48b238f0bcd6136.svg",
     "static/media/logo.svg": "/Harmonya/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "static/media/Data.svg": "/Harmonya/static/media/Data.2a3af1e71bf580b2129baa44dee9ce5d.svg",
@@ -14,12 +14,12 @@
     "static/media/LinkedIn.svg": "/Harmonya/static/media/LinkedIn.37a7a3274a16ce7386a4989327a5e194.svg",
     "static/media/Applications.svg": "/Harmonya/static/media/Applications.aaf6161005d1c48210febed920b4f16d.svg",
     "static/media/Facebook.svg": "/Harmonya/static/media/Facebook.0eb7af7d257dc7b090a5f65d8de80a2a.svg",
-    "main.9e4c67c0.css.map": "/Harmonya/static/css/main.9e4c67c0.css.map",
-    "main.b28678ce.js.map": "/Harmonya/static/js/main.b28678ce.js.map",
+    "main.82561825.css.map": "/Harmonya/static/css/main.82561825.css.map",
+    "main.f29ae027.js.map": "/Harmonya/static/js/main.f29ae027.js.map",
     "232.9b9818c5.chunk.js.map": "/Harmonya/static/js/232.9b9818c5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9e4c67c0.css",
-    "static/js/main.b28678ce.js"
+    "static/css/main.82561825.css",
+    "static/js/main.f29ae027.js"
   ]
 }
