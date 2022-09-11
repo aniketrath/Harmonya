@@ -14,7 +14,7 @@ export const Landing = () => {
         <div className=" h-screen static" data-aos="fade-in" data-aos-duration="1200">
             <div className="min-h-screen bg-neutral-900">
 
-                <div className="pt-[33vh]">
+                <div className="pt-[27vh]">
                     <p className="text-stone-300 w-1/3 text-[4.8rem] font-[400] ml-[20vh] ">
                         Supercharge your product data
                     </p>
