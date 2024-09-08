@@ -32,12 +32,12 @@ jobs:
       run: git fetch --all
 
     - name: Merge branch to master if tests pass
-      if: success() && github.ref != 'refs/heads/master'  # Only merge if it's not master
+      if: success() && github.ref != 'refs/heads/master'
       run: |
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-        git checkout master
-        git merge --no-ff ${{ github.ref }} -m "Merge branch ${{ github.ref }} into master"
+        git checkout master  # Ensure you're on the master branch
+        git merge --no-ff ${{ github.head_ref }} -m "Merge branch ${{ github.head_ref }} into master"
         git push origin master
       env:
         ACTIONS_GITHUB_TOKEN: ${{ secrets.ACTIONS_GITHUB_TOKEN }}
