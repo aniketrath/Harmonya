@@ -27,6 +27,9 @@ jobs:
       
     - name: Run the tests
       run: npm test
+    
+    - name: Fetch all branches
+      run: git fetch --all
 
     - name: Merge branch to master if tests pass
       if: success() && github.ref != 'refs/heads/master'  # Only merge if it's not master
