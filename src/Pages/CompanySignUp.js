@@ -3,7 +3,6 @@ import {SignUp} from '../Components/SignUp'
 import {FooterMini} from '../Components/Footer_Mini'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Background from '../Images/Background.jpg'
 import '../index.css';
 AOS.init();
 

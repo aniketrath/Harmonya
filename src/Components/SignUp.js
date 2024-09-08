@@ -2,23 +2,23 @@ import React from 'react'
 
 export const SignUp = () => {
   return (
-    <div class="flex h-[82vh] ">
+    <div className="flex h-[82vh] ">
 
-        <div class="w-1/5">
+        <div className="w-1/5">
 
         </div>
-        <div class="w-4/5 bg-stone-900">
+        <div className="w-4/5 bg-stone-900">
 
-            <div class=" mx-[20vh] ">
-                <h1 class="text-white text-[3rem] mt-[5vh]">
+            <div className=" mx-[20vh] ">
+                <h1 className="text-white text-[3rem] mt-[5vh]">
                     Set up Your Harmonya account
                 </h1>
-                <h2 class="text-gray-300 text-[1.4rem] my-2 "> You will be invited to join Harmonya to start expanding
+                <h2 className="text-gray-300 text-[1.4rem] my-2 "> You will be invited to join Harmonya to start expanding
                     your Bussiness
                 </h2>
 
                 <div>
-                    <input type="text" id="Name" placeholder="Name" class="w-[50vh]
+                    <input type="text" id="Name" placeholder="Name" className="w-[50vh]
                     mt-[4vh]
                     text-[1.1rem]
                     font-[600]
@@ -31,7 +31,7 @@ export const SignUp = () => {
                     outline outline-3 outline-slate-400" />
                 </div>
                 <div>
-                    <input type="text" id="email" placeholder="Email ID*" class="w-[50vh]
+                    <input type="text" id="email" placeholder="Email ID*" className="w-[50vh]
                     mt-[4vh]
                     text-[1.1rem]
                     font-[600]
@@ -45,7 +45,7 @@ export const SignUp = () => {
                 </div>
 
                 <div>
-                    <input type="text" id="CompanyName" placeholder="Company Name" class="w-[50vh]
+                    <input type="text" id="CompanyName" placeholder="Company Name" className="w-[50vh]
                     mt-[4vh]
                     text-[1.1rem]
                     font-[600]
@@ -59,7 +59,7 @@ export const SignUp = () => {
                 </div>
 
                 <div>
-                    <input type="text" id="position" placeholder="Role" class="w-[50vh]
+                    <input type="text" id="position" placeholder="Role" className="w-[50vh]
                     mt-[4vh]
                     text-[1.1rem]
                     font-[600]
@@ -72,7 +72,7 @@ export const SignUp = () => {
                     outline outline-3 outline-slate-400" />
                 </div>
 
-                <select class="select 
+                <select className="select 
                 mt-[4vh]
                 mr-20
                 w-[50vh]
@@ -84,48 +84,48 @@ export const SignUp = () => {
                 rounded-md
                 bg-slate-200
                 outline outline-3 outline-slate-400">
-                    <option value="1" class="text-[1.1rem]
+                    <option value="1" className="text-[1.1rem]
                     font-[500] ">
                         Continent :
                     </option>
-                    <option value="2" class="text-[1.1rem]
+                    <option value="2" className="text-[1.1rem]
                     font-[500]">
                         Asia
                     </option>
-                    <option value="3" class="text-[1.1rem]
+                    <option value="3" className="text-[1.1rem]
                     font-[500]">
                         Europe
                     </option>
-                    <option value="3" class="text-[1.1rem]
+                    <option value="3" className="text-[1.1rem]
                     font-[500]">
                         Africa
                     </option>
-                    <option value="4" class="text-[1.1rem]
+                    <option value="4" className="text-[1.1rem]
                     font-[500]">
                         America
                     </option>
-                    <option value="5" class="text-[1.1rem]
+                    <option value="5" className="text-[1.1rem]
                     font-[500]">
                         Australia
                     </option>
                 </select>
 
-                <div class="mt-10">
+                <div className="mt-10">
                     
-                    <input class="w-[1.1vh] h-[1.1vh]
+                    <input className="w-[1.1vh] h-[1.1vh]
                         focus:outline-slate-400
                         accent-slate-300" type="checkbox" value="" id="TnC" />
-                    <label class="form-check-label
+                    <label className="form-check-label
                         text-slate-300
                         text-[1.1rem] 
                         focus:outline-slate-400
                         ml-4 " for="Terms&Conditions">
-                        I do accept the <a href="#!" class="text-white"><u>Terms and Conditions</u></a> of your
+                        I do accept the <a href="#!" className="text-white"><u>Terms and Conditions</u></a> of your
                         site.
                     </label>
 
                 </div>
-                <button class="rounded-lg 
+                <button className="rounded-lg 
                         text-[1.2rem]
                         mt-[4vh]
                         w-28 pb-1 h-10
