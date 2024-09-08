@@ -25,5 +25,5 @@ export const FirstDiv = () => {
     </div>
   )
 }
-
+export default FirstDiv;
 
