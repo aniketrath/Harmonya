@@ -3,7 +3,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import 
 {
-  Link,useNavigate,
+  useNavigate,
 } 
   from "react-router-dom";
 AOS.init();
@@ -26,7 +26,7 @@ export const Landing = () => {
                     className="rounded-lg bg-white w-40 pb-1 h-14 font-bold hover:bg-zinc-600 hover:text-slate-100">Get a Demo</button>
                 </div>
                 <div className="absolute bottom-[20%] right-[5%]">
-                    <svg className="animate-bounce" xmlns="http://www.w3.org/2000/svg" width="110" height="110" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v13M5 12l7 7 7-7" />
+                    <svg className="animate-bounce" xmlns="http://www.w3.org/2000/svg" width="110" height="110" viewBox="0 0 24 24" fill="none" stroke="#ffffff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 5v13M5 12l7 7 7-7" />
                     </svg>
                 </div>
 
