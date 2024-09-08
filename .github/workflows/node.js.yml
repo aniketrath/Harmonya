@@ -75,10 +75,11 @@ jobs:
     - name: Build and push Docker image
       run: |
         # Extract repository name and commit SHA
-        IMAGE_NAME="${{ github.repository}}"  # This is in the format owner/repo
-        COMMIT_SHA="${{ github.sha }}"s
-        TAG="${IMAGE_NAME}:${COMMIT_SHA::7}"
-
+        IMAGE_NAME="${{ github.repository }}"  # Format: owner/repo
+        # Convert IMAGE_NAME to lowercase
+        LOWERCASE_IMAGE_NAME=$(echo $IMAGE_NAME | tr '[:upper:]' '[:lower:]')
+        COMMIT_SHA="${{ github.sha }}"  # Full commit SHA
+        TAG="${LOWERCASE_IMAGE_NAME}:${COMMIT_SHA::7}"  # Docker tag in the format repo:short-sha
         # Build and push the Docker image
         docker buildx build --tag $TAG --push .
 
