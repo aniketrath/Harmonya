@@ -32,3 +32,4 @@ export const SecondDiv = () => {
     </div>
   )
 }
+export default SecondDiv;
