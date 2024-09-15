@@ -13,22 +13,24 @@ jobs:
 
     strategy:
       matrix:
-        operating_systems: [windows-latest,ubuntu-latest,macos-latest]
-        node-version: [20.x,22.x]
+        operating_systems: [windows-latest, ubuntu-latest, macos-latest]
+        node-version: [20.x, 22.x]
 
     steps:
     - uses: actions/checkout@v4
-    - name: Use Node.js ${{ matrix.node-version }}
+
+    - name: Set up Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v4
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+
     - name: Install dependencies
-      run: npm i
-      
+      run: npm install
+
     - name: Run the tests
       run: npm test
-    
+
     - name: Fetch all branches
       run: git fetch --all
 
@@ -37,15 +39,15 @@ jobs:
       run: |
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-        git checkout master  # Ensure you're on the master branch
-        git merge --no-ff origin/${{ github.head_ref }} -m "Merge branch ${{ github.head_ref }} into master"  # Merge from the remote branch
+        git checkout master
+        git merge --no-ff origin/${{ github.head_ref }} -m "Merge branch ${{ github.head_ref }} into master"
         git push origin master
       env:
         ACTIONS_GITHUB_TOKEN: ${{ secrets.ACTIONS_GITHUB_TOKEN }}
 
     - name: Build
       run: npm run build
-      
+
     - name: Deploy
       run: |
         git config --global user.name $user_name
@@ -58,6 +60,13 @@ jobs:
         github_token: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}
         repository: ${{ github.repository }}
 
+  docker-build:
+    needs: build
+    runs-on: ubuntu-latest  # Only run the Docker build on Ubuntu
+
+    steps:
+    - uses: actions/checkout@v4
+
     - name: Set up Docker Buildx
       uses: docker/setup-buildx-action@v2
 
@@ -68,20 +77,17 @@ jobs:
         key: ${{ runner.os }}-buildx-${{ github.sha }}
         restore-keys: |
           ${{ runner.os }}-buildx-
+
     - name: Log in to Docker Hub
       uses: docker/login-action@v2
       with:
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWD_TOKEN }}
+
     - name: Build and push Docker image
       run: |
-        # Extract repository name and commit SHA
-        IMAGE_NAME="${{ github.repository }}"  # Format: owner/repo
-        # Convert IMAGE_NAME to lowercase
+        IMAGE_NAME="${{ github.repository }}"
         LOWERCASE_IMAGE_NAME=$(echo $IMAGE_NAME | tr '[:upper:]' '[:lower:]')
-        COMMIT_SHA="${{ github.sha }}"  # Full commit SHA
-        TAG="${LOWERCASE_IMAGE_NAME}:${COMMIT_SHA::7}"  # Docker tag in the format repo:short-sha
-        # Build and push the Docker image
+        COMMIT_SHA="${{ github.sha }}"
+        TAG="${LOWERCASE_IMAGE_NAME}:${COMMIT_SHA::7}"
         docker buildx build --tag $TAG --push .
-
-    
