@@ -66,12 +66,15 @@ jobs:
         github_token: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}
         repository: ${{ github.repository }}
 
-    # Docker Build and Push
-  
+  # Docker Build and Push
   push_docker:
     needs: deploy  # Runs this job only after the tests pass
     runs-on: ubuntu-latest  # Deploy only on Linux (Ubuntu)
+    
     steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
     - name: Set up Docker Buildx
       uses: docker/setup-buildx-action@v2
 
@@ -88,8 +91,8 @@ jobs:
       with:
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWD_TOKEN }}
-    
-    - name: List files in the build context
+
+    - name: List files in the repository
       run: ls -la
 
     - name: Build and push Docker image
@@ -98,4 +101,4 @@ jobs:
         LOWERCASE_IMAGE_NAME=$(echo $IMAGE_NAME | tr '[:upper:]' '[:lower:]')
         COMMIT_SHA="${{ github.sha }}"
         TAG="${LOWERCASE_IMAGE_NAME}:${COMMIT_SHA::7}"
-        docker buildx build --tag $TAG --push .
+        docker buildx build --file Dockerfile --tag $TAG --push .
